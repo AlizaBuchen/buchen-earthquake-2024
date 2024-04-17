@@ -87,7 +87,8 @@ public class EarthquakeFrame extends JFrame {
         String[] listData = new String[response.features.length];
         for (int i = 0; i < response.features.length; i++) {
             Feature feature = response.features[i];
-            listData[i] = feature.properties.mag + " " + feature.properties.place + " " + feature.geometry.coordinates[1] + " " + feature.geometry.coordinates[0];
+            listData[i] = feature.properties.mag + " " + feature.properties.place + " "
+                    + feature.geometry.coordinates[1] + " " + feature.geometry.coordinates[0];
         }
         earthquakeList.setListData(listData);
     }
